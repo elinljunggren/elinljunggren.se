@@ -1,10 +1,150 @@
+@import-normalize;
+
+/* Colors */
+:root {
+  --black: #33423b;
+  --duodarkgray: #313b3b;
+  --duogreen: #468564;
+  --gray0: #f9f9f9;
+  --gray1: #ededed;
+  --gray2: #e0e0e0;
+  --gray3: #d2d2d2;
+  --gray4: #c3c3c3;
+  --gray5: #b2b2b2;
+  --gray6: #9f9f9f;
+  --gray7: #888888;
+  --gray8: #6c6c6c;
+  --gray9: #3f3f3f;
+  --teal0: #e7f7ee;
+  --teal1: #cdf0dd;
+  --teal2: #b0e7ca;
+  --teal3: #90ddb4;
+  --teal4: #6ad29a;
+  --teal5: #3cc47b;
+  --teal6: #36b16f;
+  --teal7: #2f9b61;
+  --teal8: #278150;
+  --teal9: #1c5c3a;
+  /* --cyan0: #e7f7f7;
+  --cyan1: #ccefee;
+  --cyan2: #b0e7e5;
+  --cyan3: #8fddda;
+  --cyan4: #69d1cd;
+  --cyan5: #3cc4bf;
+  --cyan6: #36b1ac;
+  --cyan7: #2f9b97;
+  --cyan8: #27817d;
+  --cyan9: #1c5d5a;
+  --blue0: #e8f0f8;
+  --blue1: #cfe1f0;
+  --blue2: #b4d0e8;
+  --blue3: #94bcde;
+  --blue4: #6ea4d3;
+  --blue5: #3c85c4;
+  --blue6: #3677b0;
+  --blue7: #2f689a;
+  --blue8: #26567f;
+  --blue9: #1b3d5a;
+  --indigo0: #ebecf9;
+  --indigo1: #d6d7f2;
+  --indigo2: #bdbfeb;
+  --indigo3: #a0a2e2;
+  --indigo4: #7a7dd6;
+  --indigo5: #3c41c4;
+  --indigo6: #353ab0;
+  --indigo7: #2e3298;
+  --indigo8: #26297c;
+  --indigo9: #1a1c55;
+  --violet0: #f1ebf9;
+  --violet1: #e2d5f2;
+  --violet2: #d1bcea;
+  --violet3: #bd9ee1;
+  --violet4: #a378d6;
+  --violet5: #7b3cc4;
+  --violet6: #6e35b0;
+  --violet7: #602f99;
+  --violet8: #4e267d;
+  --violet9: #361a57;
+  --fuschia0: #f8ebf8;
+  --fuschia1: #f1d5f2;
+  --fuschia2: #e8bbea;
+  --fuschia3: #df9de1;
+  --fuschia4: #d277d5;
+  --fuschia5: #bf3cc4;
+  --fuschia6: #ac36b0;
+  --fuschia7: #962f9a;
+  --fuschia8: #7c277f;
+  --fuschia9: #581b5a;
+  --pink0: #f9ebf2;
+  --pink1: #f2d5e4;
+  --pink2: #eabbd5;
+  --pink3: #e19dc2;
+  --pink4: #d677aa;
+  --pink5: #c43c85;
+  --pink6: #b03677;
+  --pink7: #9a2f68;
+  --pink8: #7f2656;
+  --pink9: #5a1b3d;
+  --red0: #f9ebeb;
+  --red1: #f2d5d6;
+  --red2: #eabcbe;
+  --red3: #e19fa1;
+  --red4: #d6787c;
+  --red5: #c43c41;
+  --red6: #b0363a;
+  --red7: #9a2f33;
+  --red8: #7f262a;
+  --red9: #591b1d;
+  --orange0: #f7efe7;
+  --orange1: #f0dece;
+  --orange2: #e7cbb2;
+  --orange3: #deb592;
+  --orange4: #d29b6c;
+  --orange5: #c47b3c;
+  --orange6: #b06f36;
+  --orange7: #9a612f;
+  --orange8: #7f5027;
+  --orange9: #5b391b;
+  --yellow0: #f7f6e4;
+  --yellow1: #eeedc8;
+  --yellow2: #e5e3aa;
+  --yellow3: #dbd889;
+  --yellow4: #d0cc64;
+  --yellow5: #c4bf3c;
+  --yellow6: #b1ac36;
+  --yellow7: #9b972f;
+  --yellow8: #817d27;
+  --yellow9: #5d5a1c;
+  --lime0: #eff7e5;
+  --lime1: #deefca;
+  --lime2: #cbe6ac;
+  --lime3: #b6dc8b;
+  --lime4: #9fd066;
+  --lime5: #85c43c;
+  --lime6: #78b136;
+  --lime7: #699b2f;
+  --lime8: #578127;
+  --lime9: #3f5c1c;
+  --green0: #e8f7e7;
+  --green1: #cff0ce;
+  --green2: #b3e7b2;
+  --green3: #94dd91;
+  --green4: #6fd26b;
+  --green5: #41c43c;
+  --green6: #3ab136;
+  --green7: #339b2f;
+  --green8: #2a8127;
+  --green9: #1e5c1c */
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  color: var(--gray7);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,9 +161,23 @@ h4,
 h5,
 h6 {
   font-family: 'Josefin Sans', sans-serif;
+  color: var(--teal8);
 }
 
 h1 {
   font-size: 3.5em;
+}
 
+p {
+  line-height: 1.5em;
+}
+
+a {
+  color: var(--teal6);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--teal7);
 }
