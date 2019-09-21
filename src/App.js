@@ -11,7 +11,11 @@ class App extends Component {
         <section id="intro-section">
           <div className="container">
             <div className="flex-box">
-              <img src={me} className="img-me" />
+              <div className="img-bubbles">
+                <div className="leaf-bubble" />
+                <div className="green-bubble" />
+                <img src={me} className="img-me" />
+              </div>
               <div id="intro-text">
                 <h2>I'm Elin,</h2>
                 <p>
