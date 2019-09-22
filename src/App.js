@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import me from './img/me-bw.jpg';
-import './App.css';
-import { Header } from './Header.js';
+import React, { Component } from "react";
+import me from "./img/me-bw.jpg";
+import leaf from "./img/leaf.svg";
+import "./App.css";
+import { Header } from "./Header.js";
 
 class App extends Component {
   render() {
@@ -9,6 +10,10 @@ class App extends Component {
       <div className="App">
         <Header />
         <section id="intro-section">
+          <img src={leaf} className="leaf leaf1" />
+          <img src={leaf} className="leaf leaf2" />
+          <img src={leaf} className="leaf leaf3" />
+          <img src={leaf} className="leaf leaf4" />
           <div className="container">
             <div className="flex-box">
               <div className="img-bubbles">

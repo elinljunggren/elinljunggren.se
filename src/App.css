@@ -1,11 +1,44 @@
 section {
-  padding: 100px 0;
+  position: relative;
+  padding: 80px 0;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
   padding: 0 30px;
+}
+
+.leaf {
+  position: absolute;
+  display: none;
+}
+.leaf1 {
+  right: 100px;
+  top: 0;
+  width: 60px;
+  opacity: 0.2;
+}
+.leaf2 {
+  right: 150px;
+  top: 110px;
+  width: 50px;
+  opacity: 0.3;
+  transform: rotate(75deg);
+}
+.leaf3 {
+  right: 145px;
+  top: 210px;
+  width: 40px;
+  opacity: 0.1;
+  transform: rotate(30deg);
+}
+.leaf4 {
+  right: 130px;
+  top: 300px;
+  width: 60px;
+  opacity: 0.15;
+  transform: rotate(95deg);
 }
 
 .flex-box {
@@ -55,6 +88,10 @@ section {
 @media(min-width: 1200px) {
  .img-me {
    margin-left: 0px;
+ }
+
+ .leaf {
+   display: block;
  }
 }
 
